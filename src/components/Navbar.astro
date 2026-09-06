@@ -1,5 +1,9 @@
 ---
-import { siteName, withBase } from '../site.config.js'
+import {
+  siteName,
+  topMenus,
+  withBase,
+} from '../site.config.js'
 import { Image } from 'astro:assets';
 import logo from '../assets/images/dcycle-logo.png';
 ---
@@ -61,6 +65,11 @@ import logo from '../assets/images/dcycle-logo.png';
             Telegram
           </a>
         </div>
+        {topMenus.map(menu => (
+          <div class="navbar-item is-nav-link">
+            <a class="is-centered-responsive" href={menu.en.path}>{menu.en.name}</a>
+          </div>
+        ))}
         <!-- Sign up -->
         <div class="navbar-item">
           <a href="#" class="button k-button k-primary raised has-gradient slanted">
