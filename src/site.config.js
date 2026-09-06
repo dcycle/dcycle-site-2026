@@ -4,3 +4,16 @@ export const siteName = 'Dcycle'
 // deployed base path, so links and assets resolve correctly when the site
 // is served from a subpath (e.g. GitHub Pages project sites).
 export const withBase = (path) => `${import.meta.env.BASE_URL.replace(/\/$/, '')}${path}`
+
+export const topMenus = [
+  {
+    fr: {
+      name: 'Blogue',
+      path: 'https://blog.dcycle.com'
+    },
+    en: {
+      name: 'Blog',
+      path: 'https://blog.dcycle.com'
+    },
+  },
+];
