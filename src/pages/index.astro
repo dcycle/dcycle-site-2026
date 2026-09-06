@@ -4,6 +4,8 @@ import Layout from '../layouts/Default.astro'
 import Navbar from '../components/Navbar.astro'
 import NavbarClone from '../components/NavbarClone.astro'
 import Starfall from '../components/Starfall.astro'
+import { Image } from 'astro:assets';
+import patent from '../assets/images/patent-5996743/patent-white-on-transparent.png';
 const title = 'Home'
 ---
 
@@ -45,7 +47,7 @@ const title = 'Home'
             <!-- Hero image -->
             <div class="column is-7">
               <figure class="image">
-                <img src={withBase('/img/illustrations/buildings.svg')} alt="" />
+                <Image src={patent} alt="" />
               </figure>
             </div>
           </div>
@@ -1214,3 +1216,9 @@ const title = 'Home'
     <!-- Contact section -->
   </div>
 </Layout>
+
+<style>
+  figure.image {
+    margin: 0 10rem;
+  }
+</style>
