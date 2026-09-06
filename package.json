@@ -37,6 +37,7 @@
     "particles.js": "2.0.0",
     "plyr": "3.7.8",
     "sass": "1.75.0",
+    "sharp": "^0.35.4",
     "simplebar": "6.2.5"
   },
   "devDependencies": {

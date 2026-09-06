@@ -1,5 +1,5 @@
 ---
-import { siteName } from '../site.config.js'
+import { siteName, withBase } from '../site.config.js'
 import { Image } from 'astro:assets';
 import logo from '../assets/images/dcycle-logo.png';
 ---
@@ -12,8 +12,8 @@ import logo from '../assets/images/dcycle-logo.png';
   <div class="container">
     <!-- Brand -->
     <div class="navbar-brand">
-      <a href="/" class="navbar-item">
-        <img src={logo} alt="{{siteName}}" />
+      <a href={withBase('/')} class="navbar-item">
+        <Image src={logo} width={300} alt={siteName} />
         <span class="brand-name">{siteName}</span>
       </a>
       <!-- Responsive toggle -->
@@ -40,24 +40,24 @@ import logo from '../assets/images/dcycle-logo.png';
       <div class="navbar-end">
         <!-- Menu item -->
         <div class="navbar-item is-nav-link">
-          <a class="is-centered-responsive" href="/token">Token</a>
+          <a class="is-centered-responsive" href={withBase('/token')}>Token</a>
         </div>
         <!-- Menu item -->
         <div class="navbar-item is-nav-link">
-          <a class="is-centered-responsive" href="/ico">Ico</a>
+          <a class="is-centered-responsive" href={withBase('/ico')}>Ico</a>
         </div>
         <!-- Menu item -->
         <div class="navbar-item is-nav-link">
-          <a class="is-centered-responsive" href="/roadmap">Roadmap</a>
+          <a class="is-centered-responsive" href={withBase('/roadmap')}>Roadmap</a>
         </div>
         <!-- Menu item -->
         <div class="navbar-item is-nav-link">
-          <a class="is-centered-responsive" href="/blog">Media</a>
+          <a class="is-centered-responsive" href={withBase('/blog')}>Media</a>
         </div>
         <!-- Menu item -->
         <div class="navbar-item is-nav-link">
           <a class="is-centered-responsive" href="#">
-            <img class="telegram" src="/img/logo/telegram.svg" alt="" />
+            <img class="telegram" src={withBase('/img/logo/telegram.svg')} alt="" />
             Telegram
           </a>
         </div>

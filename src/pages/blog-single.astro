@@ -1,4 +1,5 @@
 ---
+import { withBase } from '../site.config.js'
 import Layout from '../layouts/Default.astro'
 import Navbar from '../components/Navbar.astro'
 import NavbarClone from '../components/NavbarClone.astro'
@@ -28,7 +29,7 @@ const title = 'Blog Post'
 
               <div class="author-block">
                 <div class="image is-32x32">
-                  <img src="/img/team/sandra.jpg" alt="" />
+                  <img src={withBase('/img/team/sandra.jpg')} alt="" />
                 </div>
                 <div class="author-name">
                   <span>by Sandra Bernard</span>
@@ -39,7 +40,7 @@ const title = 'Blog Post'
             <!-- Hero image -->
             <div class="column is-5">
               <figure class="image">
-                <img class="blog-featured" src="/img/media/post3.svg" alt="" />
+                <img class="blog-featured" src={withBase('/img/media/post3.svg')} alt="" />
 
                 <a
                   x-data="initLike()"
@@ -124,7 +125,7 @@ const title = 'Blog Post'
                 <article class="media is-comment">
                   <figure class="media-left">
                     <p class="image is-48x48">
-                      <img src="/img/team/glenn.jpg" />
+                      <img src={withBase('/img/team/glenn.jpg')} />
                     </p>
                   </figure>
                   <div class="media-content">
@@ -191,7 +192,7 @@ const title = 'Blog Post'
                 </article>
 
                 <div class="is-form">
-                  <img src="/img/team/mike.jpg" />
+                  <img src={withBase('/img/team/mike.jpg')} />
                   <div class="control">
                     <label>Join the discussion</label>
                     <textarea class="textarea" rows="5"></textarea>
@@ -301,7 +302,7 @@ const title = 'Blog Post'
               <div class="widget-title">Recent posts</div>
               <div class="recent-posts">
                 <div class="recent-post">
-                  <img src="/img/team/glenn.jpg" />
+                  <img src={withBase('/img/team/glenn.jpg')} />
                   <div class="meta">
                     <a href="#">Featured on Coinative</a>
                     <span>by Glenn Dunward</span>
@@ -309,7 +310,7 @@ const title = 'Blog Post'
                 </div>
 
                 <div class="recent-post">
-                  <img src="/img/team/john.jpg" />
+                  <img src={withBase('/img/team/john.jpg')} />
                   <div class="meta">
                     <a href="#">Blockchain for Dummies</a>
                     <span>by John Cambell</span>
@@ -317,7 +318,7 @@ const title = 'Blog Post'
                 </div>
 
                 <div class="recent-post">
-                  <img src="/img/team/joshua.jpg" />
+                  <img src={withBase('/img/team/joshua.jpg')} />
                   <div class="meta">
                     <a href="#">The Krypton chain algorythm</a>
                     <span>by Joshua Stevens</span>

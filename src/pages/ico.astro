@@ -1,4 +1,5 @@
 ---
+import { withBase } from '../site.config.js'
 import Layout from '../layouts/Default.astro'
 import Navbar from '../components/Navbar.astro'
 import NavbarClone from '../components/NavbarClone.astro'
@@ -108,13 +109,13 @@ const title = 'ICO'
           <!-- Client / partner list -->
           <ul>
             <li>
-              <a><img class="hero-logo" src="/img/clients/cryptomarket.svg" alt="" /> </a>
+              <a><img class="hero-logo" src={withBase('/img/clients/cryptomarket.svg')} alt="" /> </a>
             </li>
             <li>
-              <a><img class="hero-logo" src="/img/clients/bitit.svg" alt="" /> </a>
+              <a><img class="hero-logo" src={withBase('/img/clients/bitit.svg')} alt="" /> </a>
             </li>
             <li>
-              <a><img class="hero-logo" src="/img/clients/coin.svg" alt="" /> </a>
+              <a><img class="hero-logo" src={withBase('/img/clients/coin.svg')} alt="" /> </a>
             </li>
           </ul>
         </div>

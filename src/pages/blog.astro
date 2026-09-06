@@ -1,4 +1,5 @@
 ---
+import { withBase } from '../site.config.js'
 import Layout from '../layouts/Default.astro'
 import Navbar from '../components/Navbar.astro'
 import NavbarClone from '../components/NavbarClone.astro'
@@ -30,7 +31,7 @@ const title = 'Blog'
             <!-- Hero image -->
             <div class="column is-6">
               <figure class="image">
-                <img src="/img/illustrations/media.svg" alt="" />
+                <img src={withBase('/img/illustrations/media.svg')} alt="" />
               </figure>
             </div>
           </div>
@@ -46,10 +47,10 @@ const title = 'Blog'
             <div class="content-wrapper">
               <!-- Post -->
               <div class="blog-post">
-                <a href="/blog-single">
+                <a href={withBase('/blog-single')}>
                   <!-- Featured image -->
                   <div class="featured-image">
-                    <img src="/img/media/post4.svg" alt="" />
+                    <img src={withBase('/img/media/post4.svg')} alt="" />
                   </div>
                   <!-- Content -->
                   <div class="content">
@@ -61,7 +62,7 @@ const title = 'Blog'
                     <div class="post-meta">
                       <div class="author-block">
                         <div class="image is-32x32">
-                          <img src="/img/team/glenn.jpg" alt="" />
+                          <img src={withBase('/img/team/glenn.jpg')} alt="" />
                         </div>
                         <div class="author-name">
                           <span>by Glenn Dunward</span>
@@ -85,10 +86,10 @@ const title = 'Blog'
 
               <!-- Post -->
               <div class="blog-post">
-                <a href="/blog-single">
+                <a href={withBase('/blog-single')}>
                   <!-- Featured image -->
                   <div class="featured-image">
-                    <img src="/img/media/post1.svg" alt="" />
+                    <img src={withBase('/img/media/post1.svg')} alt="" />
                   </div>
                   <!-- Content -->
                   <div class="content">
@@ -100,7 +101,7 @@ const title = 'Blog'
                     <div class="post-meta">
                       <div class="author-block">
                         <div class="image is-32x32">
-                          <img src="/img/team/john.jpg" alt="" />
+                          <img src={withBase('/img/team/john.jpg')} alt="" />
                         </div>
                         <div class="author-name">
                           <span>by John Cambell</span>
@@ -124,10 +125,10 @@ const title = 'Blog'
 
               <!-- Post -->
               <div class="blog-post">
-                <a href="/blog-single">
+                <a href={withBase('/blog-single')}>
                   <!-- Featured image -->
                   <div class="featured-image">
-                    <img src="/img/media/post5.svg" alt="" />
+                    <img src={withBase('/img/media/post5.svg')} alt="" />
                   </div>
                   <!-- Content -->
                   <div class="content">
@@ -139,7 +140,7 @@ const title = 'Blog'
                     <div class="post-meta">
                       <div class="author-block">
                         <div class="image is-32x32">
-                          <img src="/img/team/helen.jpg" alt="" />
+                          <img src={withBase('/img/team/helen.jpg')} alt="" />
                         </div>
                         <div class="author-name">
                           <span>by Helen Miller</span>
@@ -163,10 +164,10 @@ const title = 'Blog'
 
               <!-- Post -->
               <div class="blog-post">
-                <a href="/blog-single">
+                <a href={withBase('/blog-single')}>
                   <!-- Featured image -->
                   <div class="featured-image">
-                    <img src="/img/media/post2.svg" alt="" />
+                    <img src={withBase('/img/media/post2.svg')} alt="" />
                   </div>
                   <!-- Content -->
                   <div class="content">
@@ -178,7 +179,7 @@ const title = 'Blog'
                     <div class="post-meta">
                       <div class="author-block">
                         <div class="image is-32x32">
-                          <img src="/img/team/joshua.jpg" alt="" />
+                          <img src={withBase('/img/team/joshua.jpg')} alt="" />
                         </div>
                         <div class="author-name">
                           <span>by Joshua Stevens</span>
@@ -202,10 +203,10 @@ const title = 'Blog'
 
               <!-- Post -->
               <div class="blog-post">
-                <a href="/blog-single">
+                <a href={withBase('/blog-single')}>
                   <!-- Featured image -->
                   <div class="featured-image">
-                    <img src="/img/media/post3.svg" alt="" />
+                    <img src={withBase('/img/media/post3.svg')} alt="" />
                   </div>
                   <!-- Content -->
                   <div class="content">
@@ -218,7 +219,7 @@ const title = 'Blog'
                     <div class="post-meta">
                       <div class="author-block">
                         <div class="image is-32x32">
-                          <img src="/img/team/sandra.jpg" alt="" />
+                          <img src={withBase('/img/team/sandra.jpg')} alt="" />
                         </div>
                         <div class="author-name">
                           <span>by Sandra Bernard</span>

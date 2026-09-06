@@ -1,4 +1,5 @@
 ---
+import { withBase } from '../site.config.js'
 import Layout from '../layouts/Default.astro'
 import Navbar from '../components/Navbar.astro'
 import NavbarClone from '../components/NavbarClone.astro'
@@ -44,7 +45,7 @@ const title = 'Home'
             <!-- Hero image -->
             <div class="column is-7">
               <figure class="image">
-                <img src="/img/illustrations/buildings.svg" alt="" />
+                <img src={withBase('/img/illustrations/buildings.svg')} alt="" />
               </figure>
             </div>
           </div>
@@ -58,13 +59,13 @@ const title = 'Home'
             <!-- Client / partner list -->
             <ul>
               <li>
-                <a><img class="hero-logo" src="/img/clients/cryptomarket.svg" alt="" /> </a>
+                <a><img class="hero-logo" src={withBase('/img/clients/cryptomarket.svg')} alt="" /> </a>
               </li>
               <li>
-                <a><img class="hero-logo" src="/img/clients/bitit.svg" alt="" /> </a>
+                <a><img class="hero-logo" src={withBase('/img/clients/bitit.svg')} alt="" /> </a>
               </li>
               <li>
-                <a><img class="hero-logo" src="/img/clients/coin.svg" alt="" /> </a>
+                <a><img class="hero-logo" src={withBase('/img/clients/coin.svg')} alt="" /> </a>
               </li>
             </ul>
           </div>
@@ -107,7 +108,7 @@ const title = 'Home'
             <!-- Feature -->
             <div class="column is-4">
               <div class="feature">
-                <img src="/img/icons/chained.svg" alt="" data-aos="fade-up" data-aos-delay="100" data-aos-offset="200" data-aos-easing="ease-out-quart" />
+                <img src={withBase('/img/icons/chained.svg')} alt="" data-aos="fade-up" data-aos-delay="100" data-aos-offset="200" data-aos-easing="ease-out-quart" />
                 <h4 class="title is-6 is-tight is-light">Chaining</h4>
                 <p>Supercharged features to make you happy and lorem ipsum sit dolor amet</p>
               </div>
@@ -115,7 +116,7 @@ const title = 'Home'
             <!-- Feature -->
             <div class="column is-4">
               <div class="feature">
-                <img src="/img/icons/stacked.svg" alt="" data-aos="fade-up" data-aos-delay="300" data-aos-offset="200" data-aos-easing="ease-out-quart" />
+                <img src={withBase('/img/icons/stacked.svg')} alt="" data-aos="fade-up" data-aos-delay="300" data-aos-offset="200" data-aos-easing="ease-out-quart" />
                 <h4 class="title is-6 is-tight is-light">Stacking</h4>
                 <p>Supercharged features to make you happy and lorem ipsum sit dolor amet</p>
               </div>
@@ -123,7 +124,7 @@ const title = 'Home'
             <!-- Feature -->
             <div class="column is-4">
               <div class="feature">
-                <img src="/img/icons/compact.svg" alt="" data-aos="fade-up" data-aos-delay="500" data-aos-offset="200" data-aos-easing="ease-out-quart" />
+                <img src={withBase('/img/icons/compact.svg')} alt="" data-aos="fade-up" data-aos-delay="500" data-aos-offset="200" data-aos-easing="ease-out-quart" />
                 <h4 class="title is-6 is-tight is-light">Managing</h4>
                 <p>Supercharged features to make you happy and lorem ipsum sit dolor amet</p>
               </div>
@@ -133,7 +134,7 @@ const title = 'Home'
           <!-- Play video button -->
           <div class="cta-wrapper has-text-centered">
             <div class="video-button levitate js-modal-btn" data-video-id="6WG7D47tGb0">
-              <img src="/img/icons/play.svg" alt="" />
+              <img src={withBase('/img/icons/play.svg')} alt="" />
             </div>
           </div>
         </div>
@@ -163,7 +164,7 @@ const title = 'Home'
             <div class="column is-5 is-offset-1">
               <div class="side-feature-content">
                 <h3 class="title is-4 is-light">
-                  <img src="/img/icons/ico/bitbanner.svg" alt="" />
+                  <img src={withBase('/img/icons/ico/bitbanner.svg')} alt="" />
                   <span>Token Building</span>
                 </h3>
                 <div class="divider is-long"></div>
@@ -171,7 +172,7 @@ const title = 'Home'
                   Viderer malorum sadipscing cum ei. Eu impetus perfecto sit, no sea labore detraxit. Primis mediocrem necessitatibus an vis. Eu impetus perfecto sit, no sea labore detraxit.
                 </p>
                 <div class="cta-wrapper">
-                  <a href="/token" class="button k-button k-primary raised has-gradient is-bold">
+                  <a href={withBase('/token')} class="button k-button k-primary raised has-gradient is-bold">
                     <span class="text">Learn More</span>
                     <span class="front-gradient"></span>
                   </a>
@@ -181,21 +182,21 @@ const title = 'Home'
 
             <!-- Feature image -->
             <div class="column is-7">
-              <img class="side-feature" src="/img/illustrations/token.svg" alt="" />
+              <img class="side-feature" src={withBase('/img/illustrations/token.svg')} alt="" />
             </div>
           </div>
 
           <div class="columns is-vcentered">
             <!-- Feature image desktop -->
             <div class="column is-7 is-hidden-mobile">
-              <img class="side-feature" src="/img/illustrations/blockchain-blocks.svg" alt="" />
+              <img class="side-feature" src={withBase('/img/illustrations/blockchain-blocks.svg')} alt="" />
             </div>
 
             <!-- Feature content -->
             <div class="column is-5">
               <div class="side-feature-content">
                 <h3 class="title is-4 is-light">
-                  <img src="/img/icons/ico/bitnetwork.svg" alt="" />
+                  <img src={withBase('/img/icons/ico/bitnetwork.svg')} alt="" />
                   <span>Cascading Blockchain</span>
                 </h3>
                 <div class="divider is-long"></div>
@@ -213,7 +214,7 @@ const title = 'Home'
 
             <!-- Feature image only for mobile -->
             <div class="column is-7 is-hidden-desktop is-hidden-tablet">
-              <img class="side-feature" src="/img/illustrations/blockchain-blocks.svg" alt="" />
+              <img class="side-feature" src={withBase('/img/illustrations/blockchain-blocks.svg')} alt="" />
             </div>
           </div>
 
@@ -222,7 +223,7 @@ const title = 'Home'
             <div class="column is-5 is-offset-1">
               <div class="side-feature-content">
                 <h3 class="title is-4 is-light">
-                  <img src="/img/icons/ico/bitmining.svg" alt="" />
+                  <img src={withBase('/img/icons/ico/bitmining.svg')} alt="" />
                   <span>Crypto Farming</span>
                 </h3>
                 <div class="divider is-long"></div>
@@ -240,7 +241,7 @@ const title = 'Home'
 
             <!-- Feature image -->
             <div class="column is-7">
-              <img class="side-feature" src="/img/illustrations/crypto-mining.svg" alt="" />
+              <img class="side-feature" src={withBase('/img/illustrations/crypto-mining.svg')} alt="" />
             </div>
           </div>
         </div>
@@ -438,7 +439,7 @@ const title = 'Home'
                   </div>
                   <!-- Tab image -->
                   <div class="column is-5">
-                    <img class="animated preFadeInUp fadeInUp" src="/img/illustrations/tokens.svg" alt="" />
+                    <img class="animated preFadeInUp fadeInUp" src={withBase('/img/illustrations/tokens.svg')} alt="" />
                   </div>
                 </div>
               </div>
@@ -478,7 +479,7 @@ const title = 'Home'
                   </div>
                   <!-- Tab image -->
                   <div class="column is-5">
-                    <img class="animated preFadeInUp fadeInUp" src="/img/illustrations/charts.svg" alt="" />
+                    <img class="animated preFadeInUp fadeInUp" src={withBase('/img/illustrations/charts.svg')} alt="" />
                   </div>
                 </div>
               </div>
@@ -518,7 +519,7 @@ const title = 'Home'
                   </div>
                   <!-- Tab image -->
                   <div class="column is-5">
-                    <img class="animated preFadeInUp fadeInUp" src="/img/illustrations/bounty.svg" alt="" />
+                    <img class="animated preFadeInUp fadeInUp" src={withBase('/img/illustrations/bounty.svg')} alt="" />
                   </div>
                 </div>
               </div>
@@ -554,7 +555,7 @@ const title = 'Home'
               <div class="side-feature-content">
                 <!-- Title -->
                 <h3 class="title is-4 is-light">
-                  <img src="/img/icons/ico/bitnetwork.svg" alt="" />
+                  <img src={withBase('/img/icons/ico/bitnetwork.svg')} alt="" />
                   <span>Track everything with the App</span>
                 </h3>
                 <!-- Divider -->
@@ -573,7 +574,7 @@ const title = 'Home'
             </div>
             <!-- Featured image -->
             <div class="column is-7">
-              <img class="side-feature" src="/img/illustrations/krypton-app.svg" alt="" />
+              <img class="side-feature" src={withBase('/img/illustrations/krypton-app.svg')} alt="" />
             </div>
           </div>
         </div>
@@ -616,9 +617,9 @@ const title = 'Home'
                       <circle class="circle-chart-circle" stroke-width="1" stroke-dasharray="33,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431"></circle>
                     </svg>
                     <!-- Sketeched face -->
-                    <img class="is-sketch" src="/img/team/john.svg" alt="" />
+                    <img class="is-sketch" src={withBase('/img/team/john.svg')} alt="" />
                     <!-- Real face -->
-                    <img class="is-real" src="/img/team/john.jpg" alt="" />
+                    <img class="is-real" src={withBase('/img/team/john.jpg')} alt="" />
                   </div>
                   <!-- Member meta -->
                   <div class="member-info">
@@ -639,8 +640,8 @@ const title = 'Home'
                       <circle class="circle-chart-background" stroke-width="1" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431"></circle>
                       <circle class="circle-chart-circle" stroke-width="1" stroke-dasharray="33,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431"></circle>
                     </svg>
-                    <img class="is-sketch" src="/img/team/lucy.svg" alt="" />
-                    <img class="is-real" src="/img/team/lucy.jpg" alt="" />
+                    <img class="is-sketch" src={withBase('/img/team/lucy.svg')} alt="" />
+                    <img class="is-real" src={withBase('/img/team/lucy.jpg')} alt="" />
                   </div>
                   <div class="member-info">
                     <h4 class="title is-light is-6 is-tight">Lucy Wong</h4>
@@ -660,8 +661,8 @@ const title = 'Home'
                       <circle class="circle-chart-background" stroke-width="1" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431"></circle>
                       <circle class="circle-chart-circle" stroke-width="1" stroke-dasharray="33,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431"></circle>
                     </svg>
-                    <img class="is-sketch" src="/img/team/joshua.svg" alt="" />
-                    <img class="is-real" src="/img/team/joshua.jpg" alt="" />
+                    <img class="is-sketch" src={withBase('/img/team/joshua.svg')} alt="" />
+                    <img class="is-real" src={withBase('/img/team/joshua.jpg')} alt="" />
                   </div>
                   <div class="member-info">
                     <h4 class="title is-light is-6 is-tight">Joshua Stevens</h4>
@@ -687,8 +688,8 @@ const title = 'Home'
                       <circle class="circle-chart-background" stroke-width="1" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431"></circle>
                       <circle class="circle-chart-circle" stroke-width="1" stroke-dasharray="33,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431"></circle>
                     </svg>
-                    <img class="is-sketch" src="/img/team/sara.svg" alt="" />
-                    <img class="is-real" src="/img/team/sara.jpg" alt="" />
+                    <img class="is-sketch" src={withBase('/img/team/sara.svg')} alt="" />
+                    <img class="is-real" src={withBase('/img/team/sara.jpg')} alt="" />
                   </div>
                   <div class="member-info">
                     <h4 class="title is-light is-6 is-tight">Sara Jackson</h4>
@@ -708,8 +709,8 @@ const title = 'Home'
                       <circle class="circle-chart-background" stroke-width="1" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431"></circle>
                       <circle class="circle-chart-circle" stroke-width="1" stroke-dasharray="33,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431"></circle>
                     </svg>
-                    <img class="is-sketch" src="/img/team/mike.svg" alt="" />
-                    <img class="is-real" src="/img/team/mike.jpg" alt="" />
+                    <img class="is-sketch" src={withBase('/img/team/mike.svg')} alt="" />
+                    <img class="is-real" src={withBase('/img/team/mike.jpg')} alt="" />
                   </div>
                   <div class="member-info">
                     <h4 class="title is-light is-6 is-tight">Mike Kovalsky</h4>
@@ -729,8 +730,8 @@ const title = 'Home'
                       <circle class="circle-chart-background" stroke-width="1" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431"></circle>
                       <circle class="circle-chart-circle" stroke-width="1" stroke-dasharray="33,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431"></circle>
                     </svg>
-                    <img class="is-sketch" src="/img/team/sandra.svg" alt="" />
-                    <img class="is-real" src="/img/team/sandra.jpg" alt="" />
+                    <img class="is-sketch" src={withBase('/img/team/sandra.svg')} alt="" />
+                    <img class="is-real" src={withBase('/img/team/sandra.jpg')} alt="" />
                   </div>
                   <div class="member-info">
                     <h4 class="title is-light is-6 is-tight">Sandra Bernard</h4>
@@ -761,7 +762,7 @@ const title = 'Home'
                 <div class="advisor-container has-text-centered">
                   <!-- Picture -->
                   <div class="photo">
-                    <img src="/img/team/a1.jpg" alt="" data-aos="fade-down" data-aos-delay="100" data-aos-offset="200" data-aos-easing="ease-out-quart" />
+                    <img src={withBase('/img/team/a1.jpg')} alt="" data-aos="fade-down" data-aos-delay="100" data-aos-offset="200" data-aos-easing="ease-out-quart" />
                   </div>
                   <!-- Meta -->
                   <div class="info">
@@ -775,7 +776,7 @@ const title = 'Home'
               <div class="column is-one-fifth">
                 <div class="advisor-container has-text-centered">
                   <div class="photo">
-                    <img src="/img/team/a2.jpg" alt="" data-aos="fade-down" data-aos-delay="300" data-aos-offset="200" data-aos-easing="ease-out-quart" />
+                    <img src={withBase('/img/team/a2.jpg')} alt="" data-aos="fade-down" data-aos-delay="300" data-aos-offset="200" data-aos-easing="ease-out-quart" />
                   </div>
                   <div class="info">
                     <div class="subtitle is-6 is-light is-compressed">Marysa Vosniak</div>
@@ -788,7 +789,7 @@ const title = 'Home'
               <div class="column is-one-fifth">
                 <div class="advisor-container has-text-centered">
                   <div class="photo">
-                    <img src="/img/team/a3.jpg" alt="" data-aos="fade-down" data-aos-delay="500" data-aos-offset="200" data-aos-easing="ease-out-quart" />
+                    <img src={withBase('/img/team/a3.jpg')} alt="" data-aos="fade-down" data-aos-delay="500" data-aos-offset="200" data-aos-easing="ease-out-quart" />
                   </div>
                   <div class="info">
                     <div class="subtitle is-6 is-light is-compressed">Glenn Mitchells</div>
@@ -801,7 +802,7 @@ const title = 'Home'
               <div class="column is-one-fifth">
                 <div class="advisor-container has-text-centered">
                   <div class="photo">
-                    <img src="/img/team/a4.jpg" alt="" data-aos="fade-down" data-aos-delay="700" data-aos-offset="200" data-aos-easing="ease-out-quart" />
+                    <img src={withBase('/img/team/a4.jpg')} alt="" data-aos="fade-down" data-aos-delay="700" data-aos-offset="200" data-aos-easing="ease-out-quart" />
                   </div>
                   <div class="info">
                     <div class="subtitle is-6 is-light is-compressed">Gary Simmons</div>
@@ -814,7 +815,7 @@ const title = 'Home'
               <div class="column is-one-fifth">
                 <div class="advisor-container has-text-centered">
                   <div class="photo">
-                    <img src="/img/team/a5.jpg" alt="" data-aos="fade-down" data-aos-delay="900" data-aos-offset="200" data-aos-easing="ease-out-quart" />
+                    <img src={withBase('/img/team/a5.jpg')} alt="" data-aos="fade-down" data-aos-delay="900" data-aos-offset="200" data-aos-easing="ease-out-quart" />
                   </div>
                   <div class="info">
                     <div class="subtitle is-6 is-light is-compressed">Olga Broniszewska</div>
@@ -992,7 +993,7 @@ const title = 'Home'
                   <a href="#">
                     <!-- Featured image -->
                     <div class="featured-image">
-                      <img src="/img/media/post1.svg" alt="" />
+                      <img src={withBase('/img/media/post1.svg')} alt="" />
                     </div>
                     <!-- Content -->
                     <div class="content">
@@ -1005,7 +1006,7 @@ const title = 'Home'
                       <div class="post-meta">
                         <div class="author-block">
                           <div class="image is-32x32">
-                            <img src="/img/team/john.jpg" alt="" />
+                            <img src={withBase('/img/team/john.jpg')} alt="" />
                           </div>
                           <div class="author-name">by John Cambell</div>
                         </div>
@@ -1029,7 +1030,7 @@ const title = 'Home'
                   <a href="#">
                     <!-- Featured image -->
                     <div class="featured-image">
-                      <img src="/img/media/post2.svg" alt="" />
+                      <img src={withBase('/img/media/post2.svg')} alt="" />
                     </div>
                     <!-- Content -->
                     <div class="content">
@@ -1042,7 +1043,7 @@ const title = 'Home'
                       <div class="post-meta">
                         <div class="author-block">
                           <div class="image is-32x32">
-                            <img src="/img/team/joshua.jpg" alt="" />
+                            <img src={withBase('/img/team/joshua.jpg')} alt="" />
                           </div>
                           <div class="author-name">by Joshua Stevens</div>
                         </div>
@@ -1066,7 +1067,7 @@ const title = 'Home'
                   <a href="#">
                     <!-- Featured image -->
                     <div class="featured-image">
-                      <img src="/img/media/post3.svg" alt="" />
+                      <img src={withBase('/img/media/post3.svg')} alt="" />
                     </div>
                     <!-- Content -->
                     <div class="content">
@@ -1080,7 +1081,7 @@ const title = 'Home'
                       <div class="post-meta">
                         <div class="author-block">
                           <div class="image is-32x32">
-                            <img src="/img/team/sandra.jpg" alt="" />
+                            <img src={withBase('/img/team/sandra.jpg')} alt="" />
                           </div>
                           <div class="author-name">by Sandra Bernard</div>
                         </div>
@@ -1114,15 +1115,15 @@ const title = 'Home'
             <div class="partners">
               <!-- Partner -->
               <div class="partner-item">
-                <img src="/img/clients/cryptomarket.svg" alt="" />
+                <img src={withBase('/img/clients/cryptomarket.svg')} alt="" />
               </div>
               <!-- Partner -->
               <div class="partner-item">
-                <img src="/img/clients/bitit.svg" alt="" />
+                <img src={withBase('/img/clients/bitit.svg')} alt="" />
               </div>
               <!-- Partner -->
               <div class="partner-item">
-                <img src="/img/clients/coin.svg" alt="" />
+                <img src={withBase('/img/clients/coin.svg')} alt="" />
               </div>
             </div>
           </div>
@@ -1154,15 +1155,15 @@ const title = 'Home'
               <div class="contact-icons">
                 <!-- Phone -->
                 <a class="contact-icon" data-aos="fade-up" data-aos-delay="100" data-aos-offset="200" data-aos-easing="ease-out-quart">
-                  <img class="is-phone" src="/img/icons/phone.svg" alt="" />
+                  <img class="is-phone" src={withBase('/img/icons/phone.svg')} alt="" />
                 </a>
                 <!-- Mail -->
                 <a class="contact-icon" data-aos="fade-up" data-aos-delay="300" data-aos-offset="200" data-aos-easing="ease-out-quart">
-                  <img class="is-phone" src="/img/icons/mail.svg" alt="" />
+                  <img class="is-phone" src={withBase('/img/icons/mail.svg')} alt="" />
                 </a>
                 <!-- Telegram -->
                 <a class="contact-icon" data-aos="fade-up" data-aos-delay="500" data-aos-offset="200" data-aos-easing="ease-out-quart">
-                  <img class="is-telegram" src="/img/logo/telegram.svg" alt="" />
+                  <img class="is-telegram" src={withBase('/img/logo/telegram.svg')} alt="" />
                 </a>
               </div>
             </div>

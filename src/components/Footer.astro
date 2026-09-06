@@ -1,5 +1,5 @@
 ---
-import { siteName } from '../site.config.js'
+import { siteName, withBase } from '../site.config.js'
 ---
 
 <footer class="krypton-footer">
@@ -7,7 +7,7 @@ import { siteName } from '../site.config.js'
     <!-- Logo -->
     <div class="footer-logo">
       <a href="#">
-        <img class="rotating" src="/img/logo/krypton-gradient.svg" alt="" />
+        <img class="rotating" src={withBase('/img/logo/krypton-gradient.svg')} alt="" />
         <div class="brand-name">{siteName}</div>
         <div class="brand-subtitle">Blockchain brought to another level</div>
       </a>
@@ -73,5 +73,5 @@ import { siteName } from '../site.config.js'
   </div>
 
   <!-- Absolute image -->
-  <img class="solar-system" src="/img/bg/solar.svg" alt="" />
+  <img class="solar-system" src={withBase('/img/bg/solar.svg')} alt="" />
 </footer>

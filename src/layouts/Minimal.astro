@@ -1,5 +1,6 @@
 ---
 import { ViewTransitions } from 'astro:transitions'
+import { withBase } from '../site.config.js'
 import BackToTop from '../components/BackToTop.astro'
 
 import '@fontsource-variable/cabin/index.css'
@@ -20,7 +21,7 @@ const { title } = Astro.props
     <title>Krypton {'- ' + title}</title>
     <ViewTransitions />
 
-    <link rel="icon" type="image/png" href="/img/favicon.png" />
+    <link rel="icon" type="image/png" href={withBase('/img/favicon.png')} />
   </head>
 
   <body>
