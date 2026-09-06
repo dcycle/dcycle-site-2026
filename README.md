@@ -1,3 +1,13 @@
+Dcycle
+-----
+
+## Font
+
+Fredoka
+Designed by Milena Brandão, Hafontia
+https://fonts.google.com/specimen/Fredoka?categoryFilters=Sans+Serif:%2FSans%2FRounded
+Weight: medium: used for logo
+
 ![Krypton Screenshot](https://media.cssninja.io/products/krypton/product.png "Krypton")
 
 # 👋 Krypton
@@ -8,7 +18,7 @@
 
 ## ✌️ preview
 
-Check out the live demo by clicking [here](https://krypton.cssninja.io). 
+Check out the live demo by clicking [here](https://krypton.cssninja.io).
 Krypton is built with [Astro](https://astro.build), [Bulma](https://bulma.io) and [Alpine JS](https://github.com/alpinejs/alpine).
 
 ## 👍 Features

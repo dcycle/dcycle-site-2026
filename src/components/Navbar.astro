@@ -1,3 +1,9 @@
+---
+import { siteName } from '../site.config.js'
+import { Image } from 'astro:assets';
+import logo from '../assets/images/dcycle-logo.png';
+---
+
 <!-- Static navbar -->
 <nav x-data="initNavbar()" class="navbar is-light" :class=`{
     'is-dark-mobile': mobileOpen,
@@ -7,8 +13,8 @@
     <!-- Brand -->
     <div class="navbar-brand">
       <a href="/" class="navbar-item">
-        <img class="rotating" src="/img/logo/krypton.svg" alt="" />
-        <span class="brand-name">Krypton</span>
+        <img src={logo} alt="{{siteName}}" />
+        <span class="brand-name">{siteName}</span>
       </a>
       <!-- Responsive toggle -->
       <div class="navbar-burger" @click="openMobileMenu()">
